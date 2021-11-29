@@ -9,11 +9,11 @@ namespace LTCSDL.DAL
 {
     public class CategoryDAL
     {
-        private NorthwindEntities2 db;
+        private Model1 db;
 
         public CategoryDAL()
         {
-            db = new NorthwindEntities2();
+            db = new Model1();
             //db.Database.Connection.ConnectionString = "Server = localhost; Database = Northwind; User id = sa; password = Password123;";
         }
 

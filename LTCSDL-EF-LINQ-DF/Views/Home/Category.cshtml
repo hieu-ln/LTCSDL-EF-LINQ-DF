@@ -7,9 +7,17 @@
 <h2>Danh sách các Danh mục sản phẩm (Loại sản phẩm)</h2>
 <table class="table table-condensed">
     <tr>
-        <td>Category ID</td>
-        <td>Category Name</td>
-        <td>Category Description</td>
+        <th>Category ID</th>
+        <th>Category Name</th>
+        <th>Category Description</th>
     </tr>
+    @foreach(CategoryDTO c in Model)
+    {
+    <tr>
+        <td>@c.CategoryID</td>
+        <td>@c.CategoryName</td>
+        <td>@c.Description</td>
+    </tr>
+    }
 </table>
 
